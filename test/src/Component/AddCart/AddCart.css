@@ -1,0 +1,14 @@
+.img img {
+    height: 130px;
+    width: 130px;
+}
+
+.detail .btn{
+    height: 30px;
+    padding: 0;
+    width: 30px;
+}
+
+.remove .btn{
+    width: 100px;
+}

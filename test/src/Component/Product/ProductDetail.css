@@ -1,0 +1,40 @@
+.mainimg{
+    text-align: end;
+}
+.mainimg img{
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 7px;
+}
+
+.alldetails{
+    padding-right: 100px;
+}
+
+
+@media (max-width: 992px) {
+    .mainimg{
+        text-align: center;
+    }
+
+    .mainimg img{
+        width: auto;
+    }
+    .alldetails{
+        padding-right: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:392px) {
+    .mainimg button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .alldetails{
+        width: 100%;
+    }
+}
