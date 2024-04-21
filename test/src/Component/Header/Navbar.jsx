@@ -8,12 +8,12 @@ const Navbar = () => {
             <div className="header container d-flex align-items-center justify-content-center mt-2 justify-content-between">
 
                 <div className='sidebar'>
-                    <button className="btn border-none outline-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+                    <button className="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
 
                     <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                         <div className="offcanvas-header">
                             <h3 className="offcanvas-title fw-bold" id="offcanvasScrollingLabel" style={{ color: "#570d48" }}>Logo</h3>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style={{boxShadow:"none"}}></button>
                         </div>
                         <div className="offcanvas-body">
                             <ul>

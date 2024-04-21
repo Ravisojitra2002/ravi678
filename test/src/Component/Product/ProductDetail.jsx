@@ -57,7 +57,7 @@ const ProductDetail = () => {
                         <div className="maindetail py-2 px-4" style={{ border: "1px solid rgb(210, 210, 210)", borderRadius: "7px" }}>
                             <div style={{ fontSize: "14px", fontWeight: "bold", color: "rgb(139, 139, 163)" }}>{product.productdetail?.Name}</div>
 
-                            <div className='mt-1' style={{ color: "black", fontSize: "24px" }}>{product.price}</div>
+                            <div className='mt-1' style={{ color: "black", fontSize: "24px" }}>₹{product.price}/-</div>
 
                             <div className="ratings d-flex align-items-center">
 

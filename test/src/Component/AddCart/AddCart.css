@@ -11,4 +11,17 @@
 
 .remove .btn{
     width: 100px;
+    box-shadow: none;
+    background-color: #0d6efd;
+    color: white;
+}
+
+.text-end .btn{
+    box-shadow: none;
+    background-color: #198754;
+    color: white;
+}
+
+.btn{
+    box-shadow: none;
 }

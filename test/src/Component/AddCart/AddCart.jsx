@@ -34,15 +34,15 @@ const AddCart = () => {
     <div className='main container p-0'>
       {cartItems.map(item => (
         <div className='row w-100 m-0 mb-3'>
-          <div key={item.id} className='img col-lg-2 col-sm-3 col-4 border rounded-start border-secondary d-flex justify-content-center align-items-center '>
+          <div key={item.id} className='img col-lg-2 col-sm-3 col-4 border rounded-start border-secondary d-flex justify-content-center align-items-center p-2 '>
             <img src={item.src} alt="" />
           </div>
 
-          <div className="detail col-lg-10 col-sm-9 col-8 border rounded-end text-start border-secondary d-lg-flex justify-content-between">
+          <div className="detail col-lg-10 col-sm-9 col-8 border rounded-end text-start border-secondary d-lg-flex justify-content-between p-2 ">
             <div>
               <div className="product_title card-title m-0 text-truncate" style={{ color: "grey", fontSize: "18px", msTextOverflow: "ellipsis", whiteSpace: "nowrap", overflow: "hidden", maxWidth: "400px" }}>{item.productdetail?.Name}</div>
 
-              <div className="product_price fs-5 fw-bold" style={{ color: "rgb(99, 97, 97)" }}>Price: {item.price}/-</div>
+              <div className="product_price fs-5 fw-bold" style={{ color: "rgb(99, 97, 97)" }}>Price: ₹{item.price}/-</div>
 
               <div className="product_description card-text rounded-pill px-2 my-1" style={{ width: "max-content", backgroundColor: "rgb(241, 241, 241)", fontSize: "14px", color: "rgb(66, 66, 74)" }}>{item.delivery}</div>
 
@@ -62,12 +62,12 @@ const AddCart = () => {
             <div>
               <div className='d-flex mt-1'>
                 <p className='me-1'>No. of Quntity:</p>
-                <button onClick={() => updateCart(item.id, item.quantity + 1)} className='btn-success btn'>+</button>
+                <button onClick={() => updateCart(item.id, item.quantity + 1)} className='btn' style={{color:"white", boxShadow:"none", background:"#198754"}}>+</button>
                 <p className='mx-2 my-1'>{item.quantity}</p>
-                <button onClick={() => updateCart(item.id, item.quantity - 1)} className='btn btn-danger'>-</button>
+                <button onClick={() => updateCart(item.id, item.quantity - 1)} className='btn' style={{color:"white", boxShadow:"none", background:"#DC3545"}}>-</button>
               </div>
               <div className='remove text-lg-center'>
-                <button className="remove-button border btn btn-primary" onClick={() => removeFromCart(item.id)}>Remove</button>
+                <button className="remove-button btn" onClick={() => removeFromCart(item.id)}>Remove</button>
               </div>
             </div>
 
@@ -77,8 +77,8 @@ const AddCart = () => {
       ))} 
       {cartItems.length > 0 && (
         <div className='text-end mt-2'>
-          <p className='fs-4 m-0'>Total Price:{getTotalPrice()}/-</p>
-          <button className='btn btn-success me-4' style={{ width: "140px" }}>Buy Now</button>
+          <p className='fs-4 m-0'>Total Price: ₹{getTotalPrice()}/-</p>
+          <button className='btn me-4' style={{ width: "140px" }}>Buy Now</button>
         </div>
       )}
     </div>
